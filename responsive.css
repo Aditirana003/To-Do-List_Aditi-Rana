@@ -1,0 +1,89 @@
+/* Mobile-first responsive design */
+/* Adjust styles for screens smaller than 600px (e.g., smartphones) */
+@media (max-width: 600px) {
+    /* Adjust the font size for smaller screens */
+    body {
+      font-size: 16px;
+    }
+  
+    /* Center-align the greeting text and input field */
+    .greeting {
+      text-align: center;
+    }
+  
+    /* Reduce the size of the todo input field */
+    #name {
+      width: 80%;
+    }
+  
+    /* Make the todo form elements stack on top of each other */
+    .create-todo form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust the width of the todo input field */
+    #content {
+      width: 80%;
+    }
+  
+    /* Center-align the search input and button */
+    .search-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust the width of the search input field */
+    #search-input {
+      width: 80%;
+    }
+  
+    /* Center-align the category options */
+    .options {
+      text-align: center;
+    }
+  }
+  
+  /* Adjust styles for screens larger than 600px (e.g., tablets and desktops) */
+  @media (min-width: 601px) {
+    /* Reset styles for larger screens (if needed) */
+    body {
+      font-size: 18px;
+    }
+  
+    .greeting {
+      text-align: left;
+    }
+  
+    #name {
+      width: auto;
+    }
+  
+    .create-todo form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    #content {
+      width: 100%;
+    }
+  
+    .search-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    #search-input {
+      width: auto;
+    }
+  
+    .options {
+      text-align: left;
+    }
+  }
+  
